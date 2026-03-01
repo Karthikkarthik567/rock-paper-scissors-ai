@@ -1,0 +1,53 @@
+# ⚔️ AI vs Human - Rock Paper Scissors
+
+A fun browser-based Rock-Paper-Scissors game where you play against an AI using **hand gestures** detected via your webcam.
+
+---
+
+## 🎮 How to Play
+
+1. Open `index.html` in your browser (Chrome/Edge recommended).  
+2. Allow camera access when prompted.  
+3. Choose your **Battle Mode**: Best of 3 (currently fully supported).  
+4. Show your gesture (Rock ✊, Paper ✋, or Scissors ✌️) in front of the camera.  
+5. Click **Start Round** to play.  
+6. Watch the AI move and check the results.  
+7. First player to reach majority wins the game.
+
+---
+
+## 🖥️ Features
+
+- Real-time hand gesture detection using **MediaPipe Hands**.  
+- Animated AI move reveal.  
+- Scoreboard and round tracking.  
+- Modern glass-style UI with animated backgrounds.  
+
+---
+
+## 📂 Files
+
+- `index.html` – main HTML file  
+- `style.css` – styling and animations  
+- `script.js` – game logic and gesture detection  
+
+---
+
+## ⚡ Notes
+
+- Currently, **Best of 3** works perfectly.  
+- Camera access is required to detect gestures.  
+- Tested in modern browsers (Chrome, Edge).  
+
+---
+
+## 🚀 Deployment
+
+You can deploy the game via [GitHub Pages](https://pages.github.com/) for free.  
+
+1. Go to your repository → Settings → Pages → Source → main branch → `/root`  
+2. Save and open the generated URL to play online.
+
+---
+
+Enjoy the game! 🎉
