@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI vs Human - Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-glow"></div>
+
+<header>
+  <h1 class="title">⚔️ AI vs Human</h1>
+  <div class="round-select">
+    <label>Battle Mode:</label>
+    <select id="roundSelect">
+      <option value="3">Best of 3</option>
+      <option value="5">Best of 5</option>
+    </select>
+  </div>
+</header>
+
+<main class="battle">
+
+  <!-- COMPUTER SIDE -->
+  <section class="player computer">
+    <h2>🖥️ Computer</h2>
+    <div class="ai-display" id="aiDisplay">❔</div>
+    <p id="aiMove">Waiting...</p>
+  </section>
+
+  <!-- CENTER CONTROL -->
+  <section class="center-panel">
+    <h2 id="countdown" class="pulse">Ready?</h2>
+
+    <button id="startBtn" class="glow-btn">Start Round</button>
+
+    <h3 id="result"></h3>
+
+    <div class="score-board">
+      <div>🤖 <span id="aiScore">0</span></div>
+      <div>👤 <span id="userScore">0</span></div>
+    </div>
+
+    <div class="round-info">
+      Round <span id="currentRound">1</span> /
+      <span id="maxRounds">3</span>
+    </div>
+  </section>
+
+  <!-- USER SIDE -->
+  <section class="player user">
+    <h2>👤 You</h2>
+
+    <div class="player">
+  <div class="video-wrapper">
+    <video id="video" autoplay muted></video>
+    <canvas id="canvas"></canvas>
+    <div class="scan-line"></div>
+  </div>
+
+  <!-- Gesture message below video -->
+  <div id="gesture" class="gesture-indicator">Show Rock / Paper / Scissors</div>
+</div>
+
+</main>
+
+<!-- MediaPipe -->
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
